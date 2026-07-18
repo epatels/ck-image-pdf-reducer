@@ -41,9 +41,25 @@ CK Image & PDF Reducer compresses images and PDFs right on your PC. Drag a file 
 
 ## Installing
 
+### Option A: Winget (recommended)
+
+```
+winget install epatels.CKImagePDFReducer
+```
+
+### Option B: curl
+
+```
+curl -L -o CKImagePDFReducerSetup.exe https://github.com/epatels/ck-image-pdf-reducer/releases/latest/download/CKImagePDFReducerSetup.exe
+CKImagePDFReducerSetup.exe
+```
+
+### Option C: Manual download
+
 1. Download `CKImagePDFReducerSetup.exe` from [Releases](https://github.com/epatels/ck-image-pdf-reducer/releases/latest).
 2. Run it — no admin rights needed, it installs per-user.
-3. On first PDF compression, it'll walk you through installing [Ghostscript](https://www.ghostscript.com), a free, separate program the app calls out to. Ghostscript itself is never bundled or copied into this app.
+
+On first PDF compression, it'll walk you through installing [Ghostscript](https://www.ghostscript.com), a free, separate program the app calls out to. Ghostscript itself is never bundled or copied into this app.
 
 ## Source code
 
