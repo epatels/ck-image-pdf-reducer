@@ -33,12 +33,14 @@ No installer for your platform yet — the app currently ships for Windows only.
 winget install epatels.CKImagePDFReducer
 ```
 
-### Option B: curl
+### Option B: curl (PowerShell)
 
+```powershell
+curl.exe -L -o CKImagePDFReducerSetup.exe https://github.com/epatels/ck-image-pdf-reducer/releases/latest/download/CKImagePDFReducerSetup.exe
+.\CKImagePDFReducerSetup.exe
 ```
-curl -L -o CKImagePDFReducerSetup.exe https://github.com/epatels/ck-image-pdf-reducer/releases/latest/download/CKImagePDFReducerSetup.exe
-CKImagePDFReducerSetup.exe
-```
+
+> **Note:** in PowerShell, `curl` is an alias for `Invoke-WebRequest` and doesn't accept `-L`/`-o` the same way. Use `curl.exe` explicitly to run the real curl that ships with Windows 10/11.
 
 ### Option C: Manual download
 
