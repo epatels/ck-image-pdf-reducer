@@ -15,7 +15,6 @@
     <img alt="Latest release" src="https://img.shields.io/github/v/release/epatels/ck-image-pdf-reducer?label=download">
   </a>
   <img alt="Platform" src="https://img.shields.io/badge/platform-Windows-blue">
-  <img alt="License" src="https://img.shields.io/badge/source-available-brightgreen">
 </p>
 
 ---
@@ -46,17 +45,10 @@ CK Image & PDF Reducer compresses images and PDFs right on your PC. Drag a file 
 2. Run it — no admin rights needed, it installs per-user.
 3. On first PDF compression, it'll walk you through installing [Ghostscript](https://www.ghostscript.com), a free, separate program the app calls out to. Ghostscript itself is never bundled or copied into this app.
 
-## Running from source
+## Source code
 
-```bash
-pip install Pillow pillow-heif pymupdf pikepdf scikit-image numpy tkinterdnd2 piexif
-python image_reducer_studio.pyw
-```
+This repo ships the compiled installer only — source isn't published here. If you'd like a copy, open a [source request](https://github.com/epatels/ck-image-pdf-reducer/issues/new?labels=source-request&template=source_request.md) issue, or use **Help → Request Source Code** inside the app, and it'll be sent over at no charge.
 
-## Source availability
+## Support
 
-This app is distributed with its full source code (`image_reducer_studio.pyw` in this repo). If you received only the compiled `.exe`, you're entitled to request the source at no charge — see **Help → About** in the app.
-
-## Building the installer yourself
-
-See [`installer/README_INSTALLER.md`](installer/README_INSTALLER.md) for the full Windows build process (PyInstaller + Inno Setup).
+Questions, bugs, or feature requests — open an issue on this repo, or use **Help → Contact Developer** inside the app.
