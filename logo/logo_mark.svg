@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="plateGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0f13"/>
+      <stop offset="100%" stop-color="#1e2229"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1024" height="1024" rx="230" fill="url(#plateGrad)"/>
+  <rect x="16" y="16" width="992" height="992" rx="222" fill="none"
+        stroke="#3b82f6" stroke-width="16"/>
+  <path d="M 302.08 322.56 L 512 506.88 L 721.92 322.56"
+        fill="none" stroke="#5b9bf8" stroke-width="76.8"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 318.87 552.96 L 512 701.44 L 705.13 552.96"
+        fill="none" stroke="#e8eaed" stroke-width="76.8"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
