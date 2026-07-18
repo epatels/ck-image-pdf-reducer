@@ -25,20 +25,6 @@
 
 No installer for your platform yet — the app currently ships for Windows only.
 
-## What it does
-
-CK Image & PDF Reducer compresses images and PDFs right on your PC. Drag a file in, pick how you want it shrunk, and export — nothing is sent anywhere.
-
-- **Resize by percentage** — scale both dimensions down together
-- **Fix Width / Fix Height** — set one dimension, the other auto-scales to preserve aspect ratio
-- **Compress by Quality** — reduce JPEG quality to hit a smaller file size
-- **Target File Size** — tell it a size limit (e.g. "under 200 KB") and it searches for the best quality/resolution that fits
-- **PDF compression** — shrinks PDFs by recompressing embedded images (via Ghostscript, installed separately on first use)
-- **Batch queue** — load and process multiple files in one pass
-- **Drag & drop** — drop files straight onto the window
-- **Windows right-click menu** — optional "Reduce with CK Image & PDF Reducer" entry in Explorer's context menu
-- **HEIC support** — reads iPhone-style HEIC images
-
 ## Installing
 
 ### Option A: Winget (recommended)
@@ -60,6 +46,20 @@ CKImagePDFReducerSetup.exe
 2. Run it — no admin rights needed, it installs per-user.
 
 On first PDF compression, it'll walk you through installing [Ghostscript](https://www.ghostscript.com), a free, separate program the app calls out to. Ghostscript itself is never bundled or copied into this app.
+
+## What it does
+
+CK Image & PDF Reducer compresses images and PDFs right on your PC. Drag a file in, pick how you want it shrunk, and export — nothing is sent anywhere.
+
+- **Resize by percentage** — scale both dimensions down together
+- **Fix Width / Fix Height** — set one dimension, the other auto-scales to preserve aspect ratio
+- **Compress by Quality** — reduce JPEG quality to hit a smaller file size
+- **Target File Size** — tell it a size limit (e.g. "under 200 KB") and it searches for the best quality/resolution that fits
+- **PDF compression** — shrinks PDFs by recompressing embedded images (via Ghostscript, installed separately on first use)
+- **Batch queue** — load and process multiple files in one pass
+- **Drag & drop** — drop files straight onto the window
+- **Windows right-click menu** — optional "Reduce with CK Image & PDF Reducer" entry in Explorer's context menu
+- **HEIC support** — reads iPhone-style HEIC images
 
 ## Source code
 
