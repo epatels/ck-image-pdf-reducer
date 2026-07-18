@@ -35,21 +35,26 @@ winget install epatels.CKImagePDFReducer
 
 ### Option B: curl
 
+Running the installer with no arguments opens the interactive setup wizard — the terminal isn't stuck, it's just waiting for you to click through that window (Next → Install → Finish). For a real one-command install, unblock the download and pass the silent switches:
+
 **Command Prompt (cmd.exe):**
 
 ```
-curl -L -o CKImagePDFReducerSetup.exe https://github.com/epatels/ck-image-pdf-reducer/releases/latest/download/CKImagePDFReducerSetup.exe
-CKImagePDFReducerSetup.exe
+curl -L -o CKImagePDFReducerSetup.exe https://github.com/epatels/ck-image-pdf-reducer/releases/latest/download/CKImagePDFReducerSetup.exe && powershell -Command "Unblock-File CKImagePDFReducerSetup.exe" && CKImagePDFReducerSetup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
 ```
 
 **PowerShell:**
 
 ```powershell
-curl.exe -L -o CKImagePDFReducerSetup.exe https://github.com/epatels/ck-image-pdf-reducer/releases/latest/download/CKImagePDFReducerSetup.exe
-.\CKImagePDFReducerSetup.exe
+curl.exe -L -o CKImagePDFReducerSetup.exe https://github.com/epatels/ck-image-pdf-reducer/releases/latest/download/CKImagePDFReducerSetup.exe; Unblock-File CKImagePDFReducerSetup.exe; .\CKImagePDFReducerSetup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
 ```
 
-> **Note:** in PowerShell, `curl` is an alias for `Invoke-WebRequest` and doesn't accept `-L`/`-o` the same way, so use `curl.exe` explicitly to run the real curl that ships with Windows 10/11. PowerShell also requires the `.\` prefix to run an exe from the current directory.
+> **Notes:**
+> - Each block above is a single line — paste it as one and press Enter once. (If you instead paste the multi-line version of a command, most terminals won't auto-run the last line; you'll need to press Enter yourself to execute it. That's normal terminal behavior, not a stuck install.)
+> - In PowerShell, `curl` is an alias for `Invoke-WebRequest` and doesn't accept `-L`/`-o` the same way, so use `curl.exe` explicitly to run the real curl that ships with Windows 10/11. PowerShell also requires the `.\` prefix to run an exe from the current directory.
+> - `Unblock-File` clears the "downloaded from the internet" flag Windows attaches to curl'd files, which can otherwise trigger a SmartScreen prompt that silently blocks the install if its window doesn't have focus.
+> - Want to see progress instead of a fully silent install? Drop `/VERYSILENT` down to `/SILENT` — it shows a progress bar but still skips all the click-through prompts.
+> - Omit the switches entirely to get the normal interactive wizard.
 
 ### Option C: Manual download
 
