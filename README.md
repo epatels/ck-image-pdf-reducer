@@ -13,12 +13,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/epatels/ck-image-pdf-reducer/releases/latest">
-    <img alt="Latest release" src="https://img.shields.io/badge/download-latest_release-3b82f6">
-  </a>
-  <img alt="Platform" src="https://img.shields.io/badge/platform-Windows-3b82f6">
-  <img alt="Cost" src="https://img.shields.io/badge/price-free-22c55e">
-  <img alt="Offline" src="https://img.shields.io/badge/processing-100%25%20offline-22c55e">
+  <a href="https://github.com/epatels/ck-image-pdf-reducer/releases/latest"><b>⬇ Latest release</b></a> &nbsp;·&nbsp;
+  <b>Windows</b> &nbsp;·&nbsp;
+  <b>Free</b> &nbsp;·&nbsp;
+  <b>100% Offline</b>
 </p>
 
 <p align="center">
