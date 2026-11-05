@@ -13,6 +13,10 @@
 </p>
 
 <p align="center">
+  <a href="https://apps.microsoft.com/detail/9ND5B55JS3VW"><img alt="Get it from the Microsoft Store" src="https://img.shields.io/badge/Microsoft%20Store-Get%20it%20free-0078D4?style=for-the-badge" height="44"></a>
+</p>
+
+<p align="center">
   <a href="https://github.com/epatels/ck-image-pdf-reducer/releases/latest"><b>⬇ Latest release (v5.0.0)</b></a> &nbsp;·&nbsp;
   <b>Windows 10/11</b> &nbsp;·&nbsp;
   <b>Free</b> &nbsp;·&nbsp;
@@ -35,11 +39,14 @@
 
 ## Download
 
+<a href="https://apps.microsoft.com/detail/9ND5B55JS3VW"><img alt="Get it from the Microsoft Store" src="https://img.shields.io/badge/Microsoft%20Store-Get%20it%20free-0078D4?style=for-the-badge" height="44"></a>
+
+Updates are delivered automatically by the Store. Prefer a direct installer?
+
 **[⬇ Download the latest Windows installer](https://github.com/epatels/ck-image-pdf-reducer/releases/latest)**
 
 No installer for your platform yet — the app currently ships for Windows only (Windows 10 version 1809 or later, 64-bit).
 
-<!-- When the Store listing is live, add: **[Get it from the Microsoft Store](YOUR_STORE_URL)** — updates are delivered automatically by the Store. -->
 
 ## What's new in 5.0.0
 
@@ -85,10 +92,10 @@ Beyond the core modes:
 Installs the Store version silently, accepting the Store agreements so nothing prompts:
 
 ```
-winget install --id <StoreProductID> --source msstore --silent --accept-package-agreements --accept-source-agreements
+winget install --id 9ND5B55JS3VW --source msstore --silent --accept-package-agreements --accept-source-agreements
 ```
 
-Replace `<StoreProductID>` with the 12-character Product ID from the app's Microsoft Store page URL (the part after `/detail/`). Or install by name:
+Or install by name:
 
 ```
 winget install "CK Image and PDF Size Reducer" --source msstore --silent --accept-package-agreements --accept-source-agreements
